@@ -13,3 +13,4 @@ package-lock.json
 cypress/tests/gorona-gov-sk/
 /cypress/tests/tuke/
 /cypress-cucumber-testing.iml
+/cypress/tests/google/googleSheetTest.feature
