@@ -1,0 +1,39 @@
+{
+  "name": "dsl",
+  "version": "1.0.0",
+  "description": "DSL For Generic Functional testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec \"**/*.feature\"",
+    "testGeneric": "cypress run --spec \"**/*.feature\" -e TAGS='@tag-generic'",
+    "test:all": "cypress run --spec \"**/*.features\"",
+    "sheets": "node \"sheets/snippet.js\" && cypress run --spec \"**/googleSheetTest.feature\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "testing"
+  ],
+  "author": "Peter Szeles",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com"
+  },
+  "homepage": "",
+  "dependencies": {
+    "@testing-library/cypress": "^7.0.3",
+    "cucumber": "^4.2.1",
+    "cypress": "^7.0.1",
+    "cypress-cucumber-preprocessor": "^4.0.1",
+    "googleapis": "^39.2.0",
+    "selenium-webdriver": "^4.0.0-beta.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/tests"
+  }
+}

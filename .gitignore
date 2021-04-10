@@ -1,0 +1,15 @@
+/.idea/
+/node_modules/
+dp-2021.iml
+.DS_Store
+cypress/screenshots
+cypress/videos
+package-lock.json
+/sheets/mock.json
+/sheets/keys.json
+/sheets/index.js
+/sheets/credentials.json
+/sheets/token.json
+cypress/tests/gorona-gov-sk/
+/cypress/tests/tuke/
+/cypress-cucumber-testing.iml
