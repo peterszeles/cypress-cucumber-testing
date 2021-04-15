@@ -10,8 +10,9 @@
     "sheets": "node \"sheets/snippet.js\" && cypress run --spec \"**/googleSheetTest.feature\""
   },
   "repository": {
+    "name": "@peterszeles/cypress-cucumber-testing",
     "type": "git",
-    "url": "git://github.com/peterszeles/cypress-cucumber-testing.git"
+    "url": "https://github.com/peterszeles/cypress-cucumber-testing.git"
   },
   "keywords": [
     "cypress",
