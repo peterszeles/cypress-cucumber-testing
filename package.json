@@ -1,5 +1,5 @@
 {
-  "name": "dsl",
+  "name": "@peterszeles/cypress-cucumber-testing",
   "version": "1.0.0",
   "description": "DSL For Generic Functional testing",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/"
+    "url": "git://github.com/peterszeles/cypress-cucumber-testing.git"
   },
   "keywords": [
     "cypress",
