@@ -1,4 +1,8 @@
-import { And, Then, When } from "cypress-cucumber-preprocessor/steps";
+import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps";
+
+Given(`I select {string}`, (v1) => {
+    cy.get(v1).click();
+});
 
 When(`I select {string}`, (v1) => {
     cy.get(v1).click();

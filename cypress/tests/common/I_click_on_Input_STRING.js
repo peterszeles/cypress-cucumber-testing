@@ -1,4 +1,8 @@
-import { And, Then, When } from "cypress-cucumber-preprocessor/steps";
+import {Given, When, Then, And} from "cypress-cucumber-preprocessor/steps";
+
+Given(`I click on Input {string}`, (v1) => {
+    cy.get('input[value="' + v1 + '"]').click({force: true});
+});
 
 When(`I click on Input {string}`, (v1) => {
     cy.get('input[value="' + v1 + '"]').click({force: true});
