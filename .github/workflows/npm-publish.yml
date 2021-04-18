@@ -22,7 +22,7 @@ jobs:
           registry-url: https://registry.npmjs.org
       - name: 🚀 publish
         run: npm publish --access public
-        working-directory: cypress-cucumber-testing
+#        working-directory: cypress-cucumber-testing
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
 #  build:
