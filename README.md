@@ -51,8 +51,10 @@ Given, When, Then, And
 | Given / When / Then / And | I select from dropdown "string" "string" | 
 | Given / When / Then / And | I select "string" | 
 | Given / When / Then / And | Label "string" is present | 
+| Given / When / Then / And | Set email at label "string" to "string" | 
 | Given / When / Then / And | Set input at label "string" to "string" | 
 | Given / When / Then / And | Set input "string" to "string" | 
+| Given / When / Then / And | Set textarea at label "string" to "string" | 
 
 
 ## Develop a Gherkin command 💻
