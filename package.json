@@ -1,6 +1,6 @@
 {
-  "name": "cypress-cucumber-testing",
-  "version": "1.1.7",
+  "name": "@peterszeles/cypress-cucumber-testing",
+  "version": "1.1.8",
   "description": "DSL For Generic Functional testing",
   "main": "index.js",
   "scripts": {
