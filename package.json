@@ -28,12 +28,14 @@
   "dependencies": {
     "@testing-library/cypress": "^7.0.3",
     "cucumber": "^4.2.1",
-    "cypress": "^7.0.1",
     "cypress-cucumber-preprocessor": "^4.0.1",
-    "googleapis": "^39.2.0"
+    "googleapis": "^71.0.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "stepDefinitions": "cypress/tests"
+  },
+  "devDependencies": {
+    "cypress": "^7.1.0"
   }
 }
