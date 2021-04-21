@@ -44,6 +44,7 @@ Given, When, Then, And
 | Given / When / Then / And | I click on "string" | 
 | Given / When / Then / And | I click on "string" button | 
 | Given / When / Then / And | I click on "string" link | 
+| Given / When / Then / And | I login as "string" "string"| 
 | Given / When / Then / And | I scroll "string" into view | 
 | Given / When / Then / And | I scroll to "string" at "string" | 
 | Given / When / Then / And | I see "string" in the title | 
@@ -54,6 +55,7 @@ Given, When, Then, And
 | Given / When / Then / And | Set email at label "string" to "string" | 
 | Given / When / Then / And | Set input at label "string" to "string" | 
 | Given / When / Then / And | Set input "string" to "string" | 
+| Given / When / Then / And | Set password to "string" | 
 | Given / When / Then / And | Set textarea at label "string" to "string" | 
 
 
