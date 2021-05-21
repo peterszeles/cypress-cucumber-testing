@@ -133,7 +133,7 @@ To use Google Sheets for implementig test scenarios
 - add your developer specific email
 - use the sheets/snippet.js file to run
 ```bash
-node sheets/snippet.js
+node sheets/snippet.js && cypress run --spec cypress/tests/google/googleSheetTest.feature
 ```
 
 ## Contributing 🥒 📐✂️✒️

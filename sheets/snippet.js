@@ -1,7 +1,8 @@
+
 const {google} = require('googleapis');
 const keys = require('./keys.json')
 const fs = require('fs');
-const mock = require('mock.json');
+const mock = require('./mock.json');
 
 //
 //https://developers.google.com/sheets/api/quickstart/nodejs
@@ -38,13 +39,14 @@ async function gsrun(cl) {
     let newDataArray = dataArray.map(function (r) {
         return r;
     })
-    createFeatureFile("googleSheetTest",dataArray);
+    createFeatureFile("googleSheetTest", dataArray);
     console.log(newDataArray);
 }
 
-function createFeatureFile(name, testData) {
-    fs.unlinkSync(mock.path+ name + '.feature');
-    fs.appendFile(mock.file+ name + '.feature', parseToCucumber(testData), function (err) {
+async function createFeatureFile(name, testData) {
+    if (!fs.existsSync(mock.path + name + '.feature')) fs.createWriteStream(mock.path + name + '.feature');
+    fs.unlinkSync(mock.path + name + '.feature');
+    fs.appendFile(mock.file + name + '.feature', parseToCucumber(testData), function (err) {
         if (err) throw err;
         console.log('Saved!');
     });
